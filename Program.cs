@@ -7,17 +7,17 @@
     string[] workArr = Symbols.Split(separators, StringSplitOptions.RemoveEmptyEntries);
     return workArr;
 }
-string PrintArray(string[] workArray)
+string PrintArray (string[] workArr)
 {
     string stringArray = "[";
-    for (int i = 0; i < workArray.Length; i++)
+    for (int i = 0; i < workArr.Length; i++)
     {
-        if (i == workArray.Length - 1)
+        if (i == workArr.Length - 1)
         {
-            stringArray += $"\"{workArray[i]}\"";
+            stringArray += $"\"{workArr[i]}\"";
             break;
         }
-        stringArray += ($"\"{workArray[i]}\", ");
+        stringArray += ($"\"{workArr[i]}\", ");
     }
     stringArray += "]";
     return stringArray;
