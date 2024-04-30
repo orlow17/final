@@ -22,3 +22,15 @@ string PrintArray (string[] workArr)
     stringArray += "]";
     return stringArray;
 }
+int StringSymbols(string[] workArr)
+{
+    int counter = 0;
+    foreach (string item in workArr)
+    {
+        if (item.Length <= 3)
+        {
+            counter++;
+        }
+    }
+    return counter;
+}
