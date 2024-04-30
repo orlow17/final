@@ -43,9 +43,16 @@ string[] NewArray(string[] workArray)
     {
         if (item.Length <= 3)
         {
-            resultArr[i] = item;
+            resultArray[i] = item;
             i++;
         }
     }
-    return resultArr;
+    return resultArray;
 }
+
+
+string[] workArr = Array();
+string[] resultArray = NewArray(workArr);
+string firstArray = PrintArray(workArr);
+string secondArray = PrintArray(resultArray);
+Console.WriteLine(firstArray + " -> " + secondArray);
