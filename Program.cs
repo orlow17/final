@@ -34,3 +34,18 @@ int StringSymbols(string[] workArr)
     }
     return counter;
 }
+string[] NewArray(string[] workArray)
+{
+    int resultArray = StringSymbols(workArr);
+    string[] resultArray = new string[resultArray];
+    int i = 0;
+    foreach (string item in workArr)
+    {
+        if (item.Length <= 3)
+        {
+            resultArr[i] = item;
+            i++;
+        }
+    }
+    return resultArr;
+}
