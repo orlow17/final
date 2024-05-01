@@ -56,3 +56,4 @@ string[] resultArray = NewArray(workArr);
 string firstArray = PrintArray(workArr);
 string secondArray = PrintArray(resultArray);
 Console.WriteLine(firstArray + " -> " + secondArray);
+
